@@ -7,9 +7,30 @@
     <title>Data transformation</title>
 </head>
 <body>
-    <div class="">
+    <div class="task-container">
         <h1>Task One</h1>  
-    </div>  
+        <p>Transform the array of students into a single string with each student's name, age and level.</p>
+
+        <h2>Concat Student Array</h2>
+
+        <textarea id="studentInput" rows="6" placeholder='Enter array of students, e.g.:
+        [{"name":"Amina", "age":20, "level":"200L"}, {"name":"John", "age":22, "level":"300L"}]'></textarea>
+        <p>Array must be in this format: "[{"name":"Amina", "age":20, "level":"200L"}]"</p>
+        <button onclick="processStudentInput()">Process</button>
+
+        <div class="output" id="output"></div>
+    </div>
+
+    <div class="task-container">
+        <h1>Task Two</h1>
+        
+        <p>Input your text here</p>
+
+        <textarea id="textInput" rows="6" placeholder='Enter text here'></textarea>
+        <button class="print-array" onclick="cleanString()">See your array</button>
+
+        <p id="show-array"></p>
+    </div>
     
 
     <script src="script/index.js"></script>
